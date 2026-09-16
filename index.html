@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cat Adoption Form</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <main class="screen">
+
+        <form class="form" action="#" method="post">
+
+            <h1 class="main-title">
+                Cat Adoption Form
+            </h1>
+
+            <p class="main-info">
+                Would you like to adopt a cat?
+                Please fill out the form below!
+            </p>
+
+            
+            <div class="form-group">
+                <label class="label" for="full-name">
+                    Full name
+                </label>
+
+                <input
+                    class="input-field"
+                    type="text"
+                    id="full-name"
+                    name="full-name"
+                    placeholder="Enter your name"
+                    minlength="2"
+                    required
+                >
+            </div>
+
+            
+            <div class="form-group">
+                <label class="label" for="email">
+                    Email address
+                </label>
+
+                <input
+                    class="input-field"
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+            </div>
+
+        
+            <fieldset class="form-group">
+                <legend class="label">
+                    What type of cat would you like to adopt?
+                </legend>
+
+                <ul class="form-list">
+                    <li>
+                        <label class="choice-label">
+                            <input
+                                type="radio"
+                                name="cat-type"
+                                value="tabby"
+                                required
+                            >
+                            Tabby cat
+                        </label>
+                    </li>
+
+                    <li>
+                        <label class="choice-label">
+                            <input
+                                type="radio"
+                                name="cat-type"
+                                value="orange"
+                            >
+                            Orange cat
+                        </label>
+                    </li>
+
+                    <li>
+                        <label class="choice-label">
+                            <input
+                                type="radio"
+                                name="cat-type"
+                                value="black"
+                            >
+                            Black cat
+                        </label>
+                    </li>
+
+                    <li>
+                        <label class="choice-label">
+                            <input
+                                type="radio"
+                                name="cat-type"
+                                value="white"
+                            >
+                            White cat
+                        </label>
+                    </li>
+
+                    <li>
+                        <label class="choice-label">
+                            <input
+                                type="radio"
+                                name="cat-type"
+                                value="any"
+                            >
+                            Any type of cat
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            
+            <div class="form-group">
+                <label class="label" for="password">
+                    Create a password
+                </label>
+
+                <input
+                    class="input-field"
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    minlength="8"
+                    required
+                >
+            </div>
+
+            
+            <div class="form-group">
+                <label class="label" for="message">
+                    Your message
+                </label>
+
+                <textarea
+                    class="textarea"
+                    id="message"
+                    name="message"
+                    placeholder="Tell us why you would like to adopt a cat"
+                    minlength="20"
+                    maxlength="500"
+                    required
+                ></textarea>
+            </div>
+
+            
+            <fieldset class="form-group">
+                <legend class="label">
+                    What kind of home do you have?
+                </legend>
+
+                <ul class="form-list">
+                    <li>
+                        <label class="choice-label">
+                            <input
+                                type="radio"
+                                name="home-type"
+                                value="apartment"
+                                required
+                            >
+                            Apartment
+                        </label>
+                    </li>
+
+                    <li>
+                        <label class="choice-label">
+                            <input
+                                type="radio"
+                                name="home-type"
+                                value="house"
+                                required
+                            >
+                            House
+                        </label>
+                    </li>
+
+                    <li>
+                        <label class="choice-label">
+                            <input
+                                type="radio"
+                                name="home-type"
+                                value="other"
+                            >
+                            Other
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            
+            <fieldset class="form-group">
+                <legend class="label">
+                    What information would you like to receive?
+                </legend>
+
+                <ul class="form-list">
+                    <li>
+                        <label class="choice-label">
+                            <input
+                                type="checkbox"
+                                name="information"
+                                value="available-cats"
+                            >
+                            Information about available cats
+                        </label>
+                    </li>
+
+                    <li>
+                        <label class="choice-label">
+                            <input
+                                type="checkbox"
+                                name="information"
+                                value="adoption-advice"
+                            >
+                            Adoption advice
+                        </label>
+                    </li>
+
+                    <li>
+                        <label class="choice-label">
+                            <input
+                                type="checkbox"
+                                name="information"
+                                value="events"
+                            >
+                            Information about adoption events
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            
+            <div class="checkbox-container">
+                <label class="checkbox-label" for="cat-information">
+                    <input
+                        type="checkbox"
+                        id="cat-information"
+                        name="cat-information"
+                    >
+
+                    I would like to receive information about cats by email.
+                </label>
+            </div>
+
+            
+            <div class="checkbox-container">
+                <label class="checkbox-label" for="terms">
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        name="terms"
+                        required
+                    >
+
+                    I agree to the adoption form terms.
+                </label>
+            </div>
+
+            <button class="button" type="submit">
+                Submit application
+            </button>
+
+        </form>
+
+    </main>
+
+</body>
+</html>
